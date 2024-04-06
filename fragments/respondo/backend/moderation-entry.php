@@ -8,11 +8,13 @@ $entry = $this->getVar('entry');
 ?>
     <div style="border: 1px solid grey; padding: 10px;">
         <div>
+            <small class="pull-right">
+                <span class="c-badge"><?= $entry->getStatusFormatted() ?></span>, 
+                <?= $entry->getCreatedateFormatted() ?>
+            </small>
             <span class="font-weight-bold"><?= $entry->getAuthor() ?: '&nbsp;' ?></span>
         </div>
         <small><?= $entry->getAuthorEmail() ?: '&nbsp;' ?></small>
-        <small class="c-badge"><?= $entry->getStatusFormatted() ?></small>
-        <small class="pull-right"><?= $entry->getCreatedateFormatted() ?></small>
         <?php if ($entry->getTitle()): ?>
             <p class="font-weight-bold"><?= $entry->getTitle() ?: '&nbsp;' ?></p>
         <?php endif ?>
