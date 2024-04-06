@@ -56,6 +56,18 @@ respondo_entry_yform_table_dataset_id = Datensatz-ID
 respondo_entry_yform_table_key = YForm-Tabelle
 respondo_table_key_empty = Ohne YForm-Tabelle
 
+# Docs
+
+respondo_docs_intro = Intro
+respondo_docs_comments = Kommentare
+respondo_docs_threads = Threads
+respondo_docs_reviews = Rezensionen
+respondo_docs_guestbook = Gästebuch
+respondo_docs_moderation = Moderation
+respondo_docs_spam = Spam
+respondo_docs_settings = Einstellungen
+respondo_docs_fragments = Fragmente
+
 # Moderation
 
 respondo_moderation_delete = Löschen

@@ -56,7 +56,6 @@ pages:
         perm: admin
     docs:
         title: translate:respondo_docs
-        subPath: README.md
         icon: rex-icon fa-info-circle
         itemclass: pull-right
         perm: respondo[docs]
