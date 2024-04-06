@@ -1,7 +1,9 @@
 <?php
 
+use Respondo\Entry;
+
 /** @var rex_fragment $this */
-/** @var Respondo\Entry $entry */
+/** @var Entry $entry */
 
 $entry = $this->getVar('entry');
 
