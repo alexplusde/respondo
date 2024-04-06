@@ -437,31 +437,31 @@ class Entry extends rex_yform_manager_dataset
 
     public function isSpam(): bool
     {
-        return $this->getStatus() === -2;
+        return -2 === $this->getStatus();
     }
 
     public function isHidden(): bool
     {
-        return $this->getStatus() === -1;
+        return -1 === $this->getStatus();
     }
 
     public function isDeleted(): bool
     {
-        return $this->getStatus() === -3;
+        return -3 === $this->getStatus();
     }
 
     public function isPublished(): bool
     {
-        return $this->getStatus() === 1;
+        return 1 === $this->getStatus();
     }
 
     public function isFeatured(): bool
     {
-        return $this->getStatus() === 2;
+        return 2 === $this->getStatus();
     }
 
     public function needsModeration(): bool
     {
-        return $this->getStatus() === 0;
+        return 0 === $this->getStatus();
     }
 }
