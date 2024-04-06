@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Всі повідомлення
+respondo_table_article = Стаття
+respondo_table_guestbook = Гостьова книга
+respondo_table_review = Відгуки
+respondo_table_comment = Коментарі
+respondo_table_guestbook = Гостьова книга
+respondo_table_spam = Спам
+respondo_table_todo = Очікує на затвердження
+respondo_table_yform_table = Таблиця YForm
+respondo_settings = Налаштування
+respondo_docs = Допомога
+
+# Форми конфігурації
+respondo_config = Налаштування
+respondo_editor = Редактор WYSIWYG
+
+# Переклад таблиці YForm
+respondo_entry_author = Автор
+respondo_entry_author_email = Електронна адреса
+respondo_entry_author_email_notice = Електронна адреса автора.
+respondo_entry_author_notice = Автор повідомлення. Це може бути справжнє ім'я, наприклад.
+respondo_entry_be_link_id = ID статті
+respondo_entry_content = Зміст
+respondo_entry_createdate = Дата створення
+respondo_entry_fieldset_end = --- Кінець набору полів ---
+respondo_entry_fieldset_form = Введення
+respondo_entry_fieldset_relation = 🔗 Пов'язано з...
+respondo_entry_fieldset_relation_end = --- Кінець зв'язків ---
+respondo_entry_notice = Назва повідомлення. Це може бути тема, заголовок або резюме, наприклад.
+respondo_entry_parent_id = Належить до
+respondo_entry_rating = Рейтинг
+respondo_entry_rating_empty = Без рейтингу
+respondo_entry_rating_notice = Дозволяє дати оцінку від 0 до 5 зірок.
+respondo_entry_status = Статус
+respondo_entry_status_deleted = ❌ Видалено
+respondo_entry_status_empty = Чернетка
+respondo_entry_status_featured = ⭐ Вибране
+respondo_entry_status_hidden = 🕶️ Приховано
+respondo_entry_status_new = 🟡 Нове
+respondo_entry_status_published = 🟢 Опубліковано
+respondo_entry_status_spam = 🗑️ Спам
+respondo_entry_title = Назва
+respondo_entry_type = Тип
+respondo_entry_type_article = Стаття REDAXO
+respondo_entry_type_comment = Коментар
+respondo_entry_type_guestbook = Гостьова книга
+respondo_entry_type_review = Відгук
+respondo_entry_type_other = Інше
+respondo_entry_type_table = Таблиця YForm
+respondo_entry_updatedate = Дата оновлення
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = ID набору даних
+respondo_entry_yform_table_key = Таблиця YForm
+respondo_table_key_empty = Без таблиці YForm

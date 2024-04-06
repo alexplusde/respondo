@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Όλες οι δημοσιεύσεις
+respondo_table_article = Άρθρο
+respondo_table_guestbook = Βιβλίο επισκεπτών
+respondo_table_review = Κριτικές
+respondo_table_comment = Σχόλια
+respondo_table_guestbook = Βιβλίο επισκεπτών
+respondo_table_spam = Spam
+respondo_table_todo = Αναμονή έγκρισης
+respondo_table_yform_table = Πίνακας YForm
+respondo_settings = Ρυθμίσεις
+respondo_docs = Βοήθεια
+
+# Φόρμες ρυθμίσεων
+respondo_config = Ρυθμίσεις
+respondo_editor = Επεξεργαστής WYSIWYG
+
+# Μετάφραση του πίνακα YForm
+respondo_entry_author = Συγγραφέας
+respondo_entry_author_email = Διεύθυνση email
+respondo_entry_author_email_notice = Διεύθυνση email του συγγραφέα.
+respondo_entry_author_notice = Συγγραφέας της δημοσίευσης. Αυτό θα μπορούσε να είναι, για παράδειγμα, ένα πραγματικό όνομα.
+respondo_entry_be_link_id = ID άρθρου
+respondo_entry_content = Περιεχόμενο
+respondo_entry_createdate = Ημερομηνία δημιουργίας
+respondo_entry_fieldset_end = --- Τέλος fieldset ---
+respondo_entry_fieldset_form = Εισαγωγή
+respondo_entry_fieldset_relation = 🔗 Συνδεδεμένο με...
+respondo_entry_fieldset_relation_end = --- Τέλος συνδέσεων ---
+respondo_entry_notice = Τίτλος της δημοσίευσης. Αυτό θα μπορούσε να είναι, για παράδειγμα, ένα θέμα, ένας τίτλος ή μια περίληψη.
+respondo_entry_parent_id = Ανήκει σε
+respondo_entry_rating = Αξιολόγηση
+respondo_entry_rating_empty = Χωρίς αξιολόγηση
+respondo_entry_rating_notice = Επιτρέπει την αξιολόγηση από 0 έως 5 αστέρια.
+respondo_entry_status = Κατάσταση
+respondo_entry_status_deleted = ❌ Διαγράφηκε
+respondo_entry_status_empty = Πρόχειρο
+respondo_entry_status_featured = ⭐ Προβεβλημένο
+respondo_entry_status_hidden = 🕶️ Κρυμμένο
+respondo_entry_status_new = 🟡 Νέο
+respondo_entry_status_published = 🟢 Δημοσιεύτηκε
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Τίτλος
+respondo_entry_type = Τύπος
+respondo_entry_type_article = Άρθρο REDAXO
+respondo_entry_type_comment = Σχόλιο
+respondo_entry_type_guestbook = Βιβλίο επισκεπτών
+respondo_entry_type_review = Κριτική
+respondo_entry_type_other = Άλλο
+respondo_entry_type_table = Πίνακας YForm
+respondo_entry_updatedate = Ημερομηνία ενημέρωσης
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = ID συνόλου δεδομένων
+respondo_entry_yform_table_key = Πίνακας YForm
+respondo_table_key_empty = Χωρίς πίνακα YForm

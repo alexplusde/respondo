@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Wszystkie wpisy
+respondo_table_article = Artykuł
+respondo_table_guestbook = Księga gości
+respondo_table_review = Recenzje
+respondo_table_comment = Komentarze
+respondo_table_guestbook = Księga gości
+respondo_table_spam = Spam
+respondo_table_todo = Oczekuje na zatwierdzenie
+respondo_table_yform_table = Tabela YForm
+respondo_settings = Ustawienia
+respondo_docs = Pomoc
+
+# Formularze konfiguracyjne
+respondo_config = Ustawienia
+respondo_editor = Edytor WYSIWYG
+
+# Tłumaczenie tabeli YForm
+respondo_entry_author = Autor
+respondo_entry_author_email = Adres e-mail
+respondo_entry_author_email_notice = Adres e-mail autora.
+respondo_entry_author_notice = Autor wpisu. Może to być na przykład prawdziwe imię.
+respondo_entry_be_link_id = ID artykułu
+respondo_entry_content = Zawartość
+respondo_entry_createdate = Data utworzenia
+respondo_entry_fieldset_end = --- Koniec wprowadzania ---
+respondo_entry_fieldset_form = Wprowadzanie
+respondo_entry_fieldset_relation = 🔗 Powiązane z...
+respondo_entry_fieldset_relation_end = --- Koniec powiązań ---
+respondo_entry_notice = Tytuł wpisu. Może to być na przykład temat, nagłówek lub streszczenie.
+respondo_entry_parent_id = Należy do
+respondo_entry_rating = Ocena
+respondo_entry_rating_empty = Bez oceny
+respondo_entry_rating_notice = Umożliwia wystawienie oceny od 0 do 5 gwiazdek.
+respondo_entry_status = Status
+respondo_entry_status_deleted = ❌ Usunięte
+respondo_entry_status_empty = Szkic
+respondo_entry_status_featured = ⭐ Wyróżnione
+respondo_entry_status_hidden = 🕶️ Ukryte
+respondo_entry_status_new = 🟡 Nowe
+respondo_entry_status_published = 🟢 Opublikowane
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Tytuł
+respondo_entry_type = Typ
+respondo_entry_type_article = Artykuł REDAXO
+respondo_entry_type_comment = Komentarz
+respondo_entry_type_guestbook = Księga gości
+respondo_entry_type_review = Recenzja
+respondo_entry_type_other = Inne
+respondo_entry_type_table = Tabela YForm
+respondo_entry_updatedate = Data aktualizacji
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = ID zestawu danych
+respondo_entry_yform_table_key = Tabela YForm
+respondo_table_key_empty = Bez tabeli YForm

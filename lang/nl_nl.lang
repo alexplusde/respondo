@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Alle berichten
+respondo_table_article = Artikel
+respondo_table_guestbook = Gastenboek
+respondo_table_review = Recensies
+respondo_table_comment = Reacties
+respondo_table_guestbook = Gastenboek
+respondo_table_spam = Spam
+respondo_table_todo = Wacht op goedkeuring
+respondo_table_yform_table = YForm-tabel
+respondo_settings = Instellingen
+respondo_docs = Help
+
+# Configuratieformulieren
+respondo_config = Instellingen
+respondo_editor = WYSIWYG-editor
+
+# YForm Tabelvertaling
+respondo_entry_author = Auteur
+respondo_entry_author_email = E-mailadres
+respondo_entry_author_email_notice = E-mailadres van de auteur.
+respondo_entry_author_notice = Auteur van het bericht. Dit kan bijvoorbeeld een echte naam zijn.
+respondo_entry_be_link_id = Artikel-ID
+respondo_entry_content = Inhoud
+respondo_entry_createdate = Aanmaakdatum
+respondo_entry_fieldset_end = --- Einde van veldset ---
+respondo_entry_fieldset_form = Invoer
+respondo_entry_fieldset_relation = 🔗 Gekoppeld aan...
+respondo_entry_fieldset_relation_end = --- Einde van koppelingen ---
+respondo_entry_notice = Titel van het bericht. Dit kan bijvoorbeeld een onderwerp, een kop of een samenvatting zijn.
+respondo_entry_parent_id = Behoort tot
+respondo_entry_rating = Beoordeling
+respondo_entry_rating_empty = Zonder beoordeling
+respondo_entry_rating_notice = Maakt het mogelijk om een beoordeling van 0-5 sterren te geven.
+respondo_entry_status = Status
+respondo_entry_status_deleted = ❌ Verwijderd
+respondo_entry_status_empty = Concept
+respondo_entry_status_featured = ⭐ Uitgelicht
+respondo_entry_status_hidden = 🕶️ Verborgen
+respondo_entry_status_new = 🟡 Nieuw
+respondo_entry_status_published = 🟢 Gepubliceerd
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Titel
+respondo_entry_type = Type
+respondo_entry_type_article = REDAXO-artikel
+respondo_entry_type_comment = Reactie
+respondo_entry_type_guestbook = Gastenboek
+respondo_entry_type_review = Recensie
+respondo_entry_type_other = Andere
+respondo_entry_type_table = YForm-tabel
+respondo_entry_updatedate = Datum van bijwerken
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = Dataset-ID
+respondo_entry_yform_table_key = YForm-tabel
+respondo_table_key_empty = Zonder YForm-tabel

@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Alla inlägg
+respondo_table_article = Artikel
+respondo_table_guestbook = Gästbok
+respondo_table_review = Recensioner
+respondo_table_comment = Kommentarer
+respondo_table_guestbook = Gästbok
+respondo_table_spam = Spam
+respondo_table_todo = Väntar på godkännande
+respondo_table_yform_table = YForm-tabell
+respondo_settings = Inställningar
+respondo_docs = Hjälp
+
+# Konfigurationsformulare
+respondo_config = Einstellungen
+respondo_editor = WYSIWYG-Editor
+
+# YForm Tabellen-Übersetzung
+respondo_entry_author = Författare
+respondo_entry_author_email = E-postadress
+respondo_entry_author_email_notice = Författarens e-postadress.
+respondo_entry_author_notice = Inläggets författare. Detta kan till exempel vara ett riktigt namn.
+respondo_entry_be_link_id = Artikel-ID
+respondo_entry_content = Innehåll
+respondo_entry_createdate = Skapelsedatum
+respondo_entry_fieldset_end = --- Ende Eingabe ---
+respondo_entry_fieldset_form = Inmatning
+respondo_entry_fieldset_relation = 🔗 Kopplad till...
+respondo_entry_fieldset_relation_end = --- Ende der Verknüpfungen ---
+respondo_entry_notice = Titel på inlägget. Detta kan till exempel vara ett ämne, en rubrik eller en sammanfattning.
+respondo_entry_parent_id = Hör till
+respondo_entry_rating = Betyg
+respondo_entry_rating_empty = Utan betyg
+respondo_entry_rating_notice = Gör det möjligt att ge ett 0-5 stjärnigt betyg.
+respondo_entry_status = Status
+respondo_entry_status_deleted = ❌ Raderad
+respondo_entry_status_empty = Utkast
+respondo_entry_status_featured = ⭐ Framhävd
+respondo_entry_status_hidden = 🕶️ Dold
+respondo_entry_status_new = 🟡 Ny
+respondo_entry_status_published = 🟢 Publicerad
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Titel
+respondo_entry_type = Typ
+respondo_entry_type_article = REDAXO-artikel
+respondo_entry_type_comment = Kommentar
+respondo_entry_type_guestbook = Gästbok
+respondo_entry_type_review = Recension
+respondo_entry_type_other = Andra
+respondo_entry_type_table = YForm-tabell
+respondo_entry_updatedate = Uppdateringsdatum
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = Dataset-ID
+respondo_entry_yform_table_key = YForm-tabell
+respondo_table_key_empty = Utan YForm-tabell

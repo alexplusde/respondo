@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Kaikki viestit
+respondo_table_article = Artikkeli
+respondo_table_guestbook = Vieraskirja
+respondo_table_review = Arvostelut
+respondo_table_comment = Kommentit
+respondo_table_guestbook = Vieraskirja
+respondo_table_spam = Roskaposti
+respondo_table_todo = Odottaa hyväksyntää
+respondo_table_yform_table = YForm-taulukko
+respondo_settings = Asetukset
+respondo_docs = Ohje
+
+# Konfigurationsformulare
+respondo_config = Asetukset
+respondo_editor = WYSIWYG-editori
+
+# YForm Tabellen-Übersetzung
+respondo_entry_author = Tekijä
+respondo_entry_author_email = Sähköpostiosoite
+respondo_entry_author_email_notice = Tekijän sähköpostiosoite.
+respondo_entry_author_notice = Viestin tekijä. Tämä voi olla esimerkiksi oikea nimi.
+respondo_entry_be_link_id = Artikkelin ID
+respondo_entry_content = Sisältö
+respondo_entry_createdate = Luontipäivämäärä
+respondo_entry_fieldset_end = --- Syöttöloppu ---
+respondo_entry_fieldset_form = Syöttö
+respondo_entry_fieldset_relation = 🔗 Linkitetty...
+respondo_entry_fieldset_relation_end = --- Linkitykset loppu ---
+respondo_entry_notice = Viestin otsikko. Tämä voi olla esimerkiksi aihe, otsikko tai yhteenveto.
+respondo_entry_parent_id = Kuuluu
+respondo_entry_rating = Arvostelu
+respondo_entry_rating_empty = Ilman arvostelua
+respondo_entry_rating_notice = Mahdollistaa 0-5 tähden arvostelun antamisen.
+respondo_entry_status = Tila
+respondo_entry_status_deleted = ❌ Poistettu
+respondo_entry_status_empty = Luonnos
+respondo_entry_status_featured = ⭐ Korostettu
+respondo_entry_status_hidden = 🕶️ Piilotettu
+respondo_entry_status_new = 🟡 Uusi
+respondo_entry_status_published = 🟢 Julkaistu
+respondo_entry_status_spam = 🗑️ Roskaposti
+respondo_entry_title = Otsikko
+respondo_entry_type = Tyyppi
+respondo_entry_type_article = REDAXO-artikkeli
+respondo_entry_type_comment = Kommentti
+respondo_entry_type_guestbook = Vieraskirja
+respondo_entry_type_review = Arvostelu
+respondo_entry_type_other = Muut
+respondo_entry_type_table = YForm-taulukko
+respondo_entry_updatedate = Päivityspäivämäärä
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = Tietue-ID
+respondo_entry_yform_table_key = YForm-taulukko
+respondo_table_key_empty = Ilman YForm-taulukkoa

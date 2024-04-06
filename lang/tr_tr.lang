@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Tüm Mesajlar
+respondo_table_article = Makale
+respondo_table_guestbook = Ziyaretçi Defteri
+respondo_table_review = İncelemeler
+respondo_table_comment = Yorumlar
+respondo_table_guestbook = Ziyaretçi Defteri
+respondo_table_spam = Spam
+respondo_table_todo = Onay Bekliyor
+respondo_table_yform_table = YForm Tablosu
+respondo_settings = Ayarlar
+respondo_docs = Yardım
+
+# Yapılandırma Formları
+respondo_config = Ayarlar
+respondo_editor = WYSIWYG Editör
+
+# YForm Tablo Çevirisi
+respondo_entry_author = Yazar
+respondo_entry_author_email = E-posta Adresi
+respondo_entry_author_email_notice = Yazarın E-posta Adresi.
+respondo_entry_author_notice = Mesajın yazarı. Bu bir gerçek isim olabilir, örneğin.
+respondo_entry_be_link_id = Makale ID
+respondo_entry_content = İçerik
+respondo_entry_createdate = Oluşturma Tarihi
+respondo_entry_fieldset_end = --- Fieldset Sonu ---
+respondo_entry_fieldset_form = Giriş
+respondo_entry_fieldset_relation = 🔗 İle İlişkili...
+respondo_entry_fieldset_relation_end = --- İlişkiler Sonu ---
+respondo_entry_notice = Mesajın başlığı. Bu bir konu, başlık veya özet olabilir, örneğin.
+respondo_entry_parent_id = Aittir
+respondo_entry_rating = Değerlendirme
+respondo_entry_rating_empty = Değerlendirme Yok
+respondo_entry_rating_notice = 0-5 yıldız arası bir değerlendirme yapmayı sağlar.
+respondo_entry_status = Durum
+respondo_entry_status_deleted = ❌ Silindi
+respondo_entry_status_empty = Taslak
+respondo_entry_status_featured = ⭐ Öne Çıkan
+respondo_entry_status_hidden = 🕶️ Gizli
+respondo_entry_status_new = 🟡 Yeni
+respondo_entry_status_published = 🟢 Yayınlandı
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Başlık
+respondo_entry_type = Tür
+respondo_entry_type_article = REDAXO Makale
+respondo_entry_type_comment = Yorum
+respondo_entry_type_guestbook = Ziyaretçi Defteri
+respondo_entry_type_review = İnceleme
+respondo_entry_type_other = Diğer
+respondo_entry_type_table = YForm Tablosu
+respondo_entry_updatedate = Güncelleme Tarihi
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = Veri Seti ID
+respondo_entry_yform_table_key = YForm Tablosu
+respondo_table_key_empty = YForm Tablosu Yok
