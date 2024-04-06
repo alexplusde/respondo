@@ -18,7 +18,7 @@ $collection = $this->getVar('collection', Entry::getSpam());
         <?php
         $counter = 0;
         foreach ($collection as $entry) {
-            if ($counter % 3 == 0 && $counter != 0) {
+            if (0 == $counter % 3 && 0 != $counter) {
                 echo '<div class="clearfix"></div>';
             }
             ?>
@@ -29,7 +29,7 @@ $collection = $this->getVar('collection', Entry::getSpam());
                 ?>
             </div>
             <?php
-            $counter++;
+            ++$counter;
         }
         ?>
         </div>

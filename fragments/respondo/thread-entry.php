@@ -31,13 +31,13 @@ $max_level = $this->getVar('max_level', 3);
                 $this->setVar('parent_id', $entry->getId());
                 echo $this->subfragment('respondo/thread-form.php');
 
-                foreach($entry->getChildren() as $entry) {
+                foreach ($entry->getChildren() as $entry) {
                     $this->setVar('entry', $entry, false);
                     $this->setVar('level', $level + 1);
-                    if($level < $max_level) {
+                    if ($level < $max_level) {
                         echo $this->subfragment('respondo/thread-entry.php');
                     }
-                };
+                }
 
             ?>
             </div>

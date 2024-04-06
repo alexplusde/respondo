@@ -2,11 +2,15 @@
 
 namespace Respondo;
 
+use DateTime;
 use rex_article;
 use rex_i18n;
+use rex_yform_manager;
 use rex_yform_manager_collection;
 use rex_yform_manager_dataset;
 use rex_yform_manager_table;
+
+use const ENT_QUOTES;
 
 class Entry extends rex_yform_manager_dataset
 {
@@ -35,7 +39,7 @@ class Entry extends rex_yform_manager_dataset
         ];
     }
 
-    public static function ratingValues() : array
+    public static function ratingValues(): array
     {
         return [
             '1' => '★',
@@ -98,9 +102,9 @@ class Entry extends rex_yform_manager_dataset
             ->find();
     }
 
-    public static function getEntriesByTable(string $tableKey, int $datasetId = null): ?rex_yform_manager_collection
+    public static function getEntriesByTable(string $tableKey, ?int $datasetId = null): ?rex_yform_manager_collection
     {
-        if($datasetId) {
+        if ($datasetId) {
             return self::query()
                 ->where('yform_table_key', $tableKey)
                 ->where('yorm_table_dataset_id', $datasetId)
@@ -129,37 +133,41 @@ class Entry extends rex_yform_manager_dataset
             ->find();
     }
 
-    public function getCreatedateFormatted() : string
+    public function getCreatedateFormatted(): string
     {
-        $now = new \DateTime();
-        $date = new \DateTime($this->getCreatedate());
+        $now = new DateTime();
+        $date = new DateTime($this->getCreatedate());
         $interval = $now->diff($date);
 
         if ($interval->y >= 1) {
-            return "vor " . $interval->y . " Jahr(en)";
-        } else if ($interval->m >= 1) {
-            return "vor " . $interval->m . " Monat(en)";
-        } else if ($interval->d >= 1) {
-            return "vor " . $interval->d . " Tag(en)";
-        } else if ($interval->h >= 1) {
-            return "vor " . $interval->h . " Stunde(n)";
-        } else if ($interval->i >= 1) {
-            return "vor " . $interval->i . " Minute(n)";
-        } else {
-            return "vor " . $interval->s . " Sekunde(n)";
+            return 'vor ' . $interval->y . ' Jahr(en)';
         }
+        if ($interval->m >= 1) {
+            return 'vor ' . $interval->m . ' Monat(en)';
+        }
+        if ($interval->d >= 1) {
+            return 'vor ' . $interval->d . ' Tag(en)';
+        }
+        if ($interval->h >= 1) {
+            return 'vor ' . $interval->h . ' Stunde(n)';
+        }
+        if ($interval->i >= 1) {
+            return 'vor ' . $interval->i . ' Minute(n)';
+        }
+        return 'vor ' . $interval->s . ' Sekunde(n)';
     }
 
-    public function getStatusFormatted() : string
+    public function getStatusFormatted(): string
     {
         $status = $this->getStatus();
         $statusValues = self::statusValues();
         return $statusValues[$status] ?? $statusValues[''];
     }
 
-    public function getTableManagerEditUrl() {
+    public function getTableManagerEditUrl()
+    {
         $table_name = $this->getTableName();
-        return \rex_yform_manager::url($table_name, $this->getId());
+        return rex_yform_manager::url($table_name, $this->getId());
     }
 
     /* Titel */
@@ -175,6 +183,7 @@ class Entry extends rex_yform_manager_dataset
         $this->setValue('title', $value);
         return $this;
     }
+
     public function getContent(bool $asPlaintext = false): ?string
     {
         $content = $this->getValue('content');
@@ -186,7 +195,7 @@ class Entry extends rex_yform_manager_dataset
         // Konvertiert spezielle Zeichen in HTML-Entitäten und behält Zeilenumbrüche bei
         return nl2br(htmlspecialchars($content, ENT_QUOTES, 'UTF-8'));
     }
-    
+
     /** @api */
     public function setContent(mixed $value): self
     {
@@ -199,7 +208,6 @@ class Entry extends rex_yform_manager_dataset
     public function getAuthor(): ?string
     {
         return htmlspecialchars($this->getValue('author'), ENT_QUOTES, 'UTF-8');
-
     }
 
     /** @api */
@@ -234,7 +242,7 @@ class Entry extends rex_yform_manager_dataset
     {
         $rating = $this->getRating();
         $stars = '';
-        for ($i = 0; $i < 5; $i++) {
+        for ($i = 0; $i < 5; ++$i) {
             $stars .= $rating > $i ? '★' : '☆';
         }
         return $stars;
