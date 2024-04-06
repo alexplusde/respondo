@@ -1,7 +1,7 @@
 <?php
 
-/** @var $this rex_fragment */
-/** @var $collection rex_yform_table_collection */
+/** @var rex_fragment $this */
+/** @var rex_yform_table_collection $collection */
 
 $collection = $this->getVar('collection');
 

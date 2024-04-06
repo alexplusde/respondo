@@ -1,7 +1,7 @@
 <?php
 
-/** @var $this rex_fragment */
-/** @var $entry Respondo\Entry */
+/** @var rex_fragment $this */
+/** @var Respondo\Entry $entry */
 
 $entry = $this->getVar('entry');
 
