@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Todas las entradas
+respondo_table_article = Artículo
+respondo_table_guestbook = Libro de visitas
+respondo_table_review = Reseñas
+respondo_table_comment = Comentarios
+respondo_table_guestbook = Libro de visitas
+respondo_table_spam = Spam
+respondo_table_todo = Esperando aprobación
+respondo_table_yform_table = Tabla YForm
+respondo_settings = Configuraciones
+respondo_docs = Ayuda
+
+# Formularios de configuración
+respondo_config = Configuraciones
+respondo_editor = Editor WYSIWYG
+
+# Traducción de la tabla YForm
+respondo_entry_author = Autor
+respondo_entry_author_email = Dirección de correo electrónico
+respondo_entry_author_email_notice = Dirección de correo electrónico del autor.
+respondo_entry_author_notice = Autor de la entrada. Esto podría ser, por ejemplo, un nombre real.
+respondo_entry_be_link_id = ID del artículo
+respondo_entry_content = Contenido
+respondo_entry_createdate = Fecha de creación
+respondo_entry_fieldset_end = --- Fin de la entrada ---
+respondo_entry_fieldset_form = Entrada
+respondo_entry_fieldset_relation = 🔗 Relacionado con...
+respondo_entry_fieldset_relation_end = --- Fin de las relaciones ---
+respondo_entry_notice = Título de la entrada. Esto podría ser, por ejemplo, un asunto, un encabezado o un resumen.
+respondo_entry_parent_id = Pertenece a
+respondo_entry_rating = Calificación
+respondo_entry_rating_empty = Sin calificación
+respondo_entry_rating_notice = Permite dar una calificación de 0 a 5 estrellas.
+respondo_entry_status = Estado
+respondo_entry_status_deleted = ❌ Eliminado
+respondo_entry_status_empty = Borrador
+respondo_entry_status_featured = ⭐ Destacado
+respondo_entry_status_hidden = 🕶️ Oculto
+respondo_entry_status_new = 🟡 Nuevo
+respondo_entry_status_published = 🟢 Publicado
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Título
+respondo_entry_type = Tipo
+respondo_entry_type_article = Artículo REDAXO
+respondo_entry_type_comment = Comentario
+respondo_entry_type_guestbook = Libro de visitas
+respondo_entry_type_review = Reseña
+respondo_entry_type_other = Otros
+respondo_entry_type_table = Tabla YForm
+respondo_entry_updatedate = Fecha de actualización
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = ID del conjunto de datos
+respondo_entry_yform_table_key = Tabla YForm
+respondo_table_key_empty = Sin tabla YForm

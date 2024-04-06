@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = Alle indlæg
+respondo_table_article = Artikel
+respondo_table_guestbook = Gæstebog
+respondo_table_review = Anmeldelser
+respondo_table_comment = Kommentarer
+respondo_table_guestbook = Gæstebog
+respondo_table_spam = Spam
+respondo_table_todo = Venter på godkendelse
+respondo_table_yform_table = YForm-tabel
+respondo_settings = Indstillinger
+respondo_docs = Hjælp
+
+# Konfigurationsformularer
+respondo_config = Indstillinger
+respondo_editor = WYSIWYG-editor
+
+# YForm tabeloversættelse
+respondo_entry_author = Forfatter
+respondo_entry_author_email = E-mail-adresse
+respondo_entry_author_email_notice = Forfatterens e-mail-adresse.
+respondo_entry_author_notice = Forfatter af indlægget. Dette kan f.eks. være et rigtigt navn.
+respondo_entry_be_link_id = Artikel-ID
+respondo_entry_content = Indhold
+respondo_entry_createdate = Oprettelsesdato
+respondo_entry_fieldset_end = Ende des Fieldsets
+respondo_entry_fieldset_form = Indtastning
+respondo_entry_fieldset_relation = 🔗 Linket med...
+respondo_entry_fieldset_relation_end = Ende der Verknüpfungen
+respondo_entry_notice = Titel på indlægget. Dette kan f.eks. være et emne, en overskrift eller et resumé.
+respondo_entry_parent_id = Hører til
+respondo_entry_rating = Bedømmelse
+respondo_entry_rating_empty = Uden bedømmelse
+respondo_entry_rating_notice = Gør det muligt at give en 0-5 stjerner bedømmelse.
+respondo_entry_status = Status
+respondo_entry_status_deleted = ❌ Slettet
+respondo_entry_status_empty = Udkast
+respondo_entry_status_featured = ⭐ Fremhævet
+respondo_entry_status_hidden = 🕶️ Skjult
+respondo_entry_status_new = 🟡 Ny
+respondo_entry_status_published = 🟢 Offentliggjort
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Titel
+respondo_entry_type = Type
+respondo_entry_type_article = REDAXO-artikel
+respondo_entry_type_comment = Kommentar
+respondo_entry_type_guestbook = Gæstebog
+respondo_entry_type_review = Anmeldelse
+respondo_entry_type_other = Andre
+respondo_entry_type_table = YForm-tabel
+respondo_entry_updatedate = Opdateringsdato
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = Datasæt-ID
+respondo_entry_yform_table_key = YForm-tabel
+respondo_table_key_empty = Uden YForm-tabel
