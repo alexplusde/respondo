@@ -387,4 +387,81 @@ class Entry extends rex_yform_manager_dataset
         $this->setValue('uuid', $value);
         return $this;
     }
+
+    /* Moderation */
+
+    public function saveAsSpam(bool $save = false): self
+    {
+        $this->setStatus(-2);
+        if ($save) {
+            $this->save();
+        }
+        return $this;
+    }
+
+    public function setAsHidden(bool $save = false): self
+    {
+        $this->setStatus(-1);
+        if ($save) {
+            $this->save();
+        }
+        return $this;
+    }
+
+    public function setAsDeleted(bool $save = false): self
+    {
+        $this->setStatus(-3);
+        if ($save) {
+            $this->save();
+        }
+        return $this;
+    }
+
+    public function setAsPublished(bool $save = false): self
+    {
+        $this->setStatus(1);
+        if ($save) {
+            $this->save();
+        }
+        return $this;
+    }
+
+    public function setAsFeatured(bool $save = false): self
+    {
+        $this->setStatus(2);
+        if ($save) {
+            $this->save();
+        }
+        return $this;
+    }
+
+    public function isSpam(): bool
+    {
+        return $this->getStatus() === -2;
+    }
+
+    public function isHidden(): bool
+    {
+        return $this->getStatus() === -1;
+    }
+
+    public function isDeleted(): bool
+    {
+        return $this->getStatus() === -3;
+    }
+
+    public function isPublished(): bool
+    {
+        return $this->getStatus() === 1;
+    }
+
+    public function isFeatured(): bool
+    {
+        return $this->getStatus() === 2;
+    }
+
+    public function needsModeration(): bool
+    {
+        return $this->getStatus() === 0;
+    }
 }
