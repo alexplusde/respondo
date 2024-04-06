@@ -10,6 +10,7 @@ requires:
     redaxo: ^5.17
     packages:
         yform: "^4"
+        yform_spam_protection: "^1"
 
 
 
