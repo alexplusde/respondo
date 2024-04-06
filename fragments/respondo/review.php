@@ -20,7 +20,7 @@ $collection = $this->getVar('collection', Entry::getReviews());
 				<?php
 
 /* Sub-Fragment comment-form.php */
-$this->setVar('form_ytemplate', 'bootstrap');
+$this->setVar('form_ytemplate', 'bootstrap5,bootstrap');
 echo $this->subfragment('respondo/review-form.php');
 
 foreach ($collection as $entry) {
