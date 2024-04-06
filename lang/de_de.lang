@@ -1,16 +1,57 @@
-blaupause_title = Blaupause
+respondo_title = Respondo
 
-blaupause_table = Blaupause
-blaupause_settings = Einstellungen
-blaupause_docs = Hilfe
-
-# FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden
+respondo_table = 💬 Respondo 
+respondo_table_all = Alle Beiträge
+respondo_table_article = Artikel
+respondo_table_guestbook = Gästebuch
+respondo_table_review = Rezensionen
+respondo_table_comment = Kommentare
+respondo_table_guestbook = Gästebuch
+respondo_table_spam = Spam
+respondo_table_todo = Wartet auf Freigabe
+respondo_table_yform_table = YForm-Tabelle
+respondo_settings = Einstellungen
+respondo_docs = Hilfe
 
 # Konfigurationsformulare
-blaupause_config = Einstellungen
-blaupause_config_mytextfield_label = Test-Feld
-blaupause_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
+respondo_config = Einstellungen
+respondo_editor = WYSIWYG-Editor
 
 # YForm Tabellen-Übersetzung
-blaupause_table_name_label = Name
-blaupause_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 
+respondo_entry_author = Autor
+respondo_entry_author_email = E-Mail-Adresse
+respondo_entry_author_email_notice = E-Mail-Adresse des Autors.
+respondo_entry_author_notice = Autor des Beitrags. Dies kann z.B. ein Klarname sein.
+respondo_entry_be_link_id = Artikel-ID
+respondo_entry_content = Inhalt
+respondo_entry_createdate = Erstellungsdatum
+respondo_entry_fieldset_end = --- Fieldset-Ende ---
+respondo_entry_fieldset_form = Eingabe
+respondo_entry_fieldset_relation = 🔗 Verknüpft mit...
+respondo_entry_fieldset_relation_end = --- Verknüpfungen Ende ---
+respondo_entry_notice = Titel des Beitrags. Dies kann z.B. ein Betreff, eine Überschrift oder Zusammenfassung sein.
+respondo_entry_parent_id = Gehört zu
+respondo_entry_rating = Bewertung
+respondo_entry_rating_empty = Ohne Bewertung
+respondo_entry_rating_notice = Ermöglicht, eine 0-5 Sterne-Bewertung abzugeben.
+respondo_entry_status = Status
+respondo_entry_status_deleted = ❌ Gelöscht
+respondo_entry_status_empty = Entwurf
+respondo_entry_status_featured = ⭐ Hervorgehoben
+respondo_entry_status_hidden = 🕶️ Versteckt
+respondo_entry_status_new = 🟡 Neu
+respondo_entry_status_published = 🟢 Veröffentlicht
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Titel
+respondo_entry_type = Typ
+respondo_entry_type_article = REDAXO-Artikel
+respondo_entry_type_comment = Kommentar
+respondo_entry_type_guestbook = Gästebuch
+respondo_entry_type_review = Rezension
+respondo_entry_type_other = Andere
+respondo_entry_type_table = YForm-Tabelle
+respondo_entry_updatedate = Aktualisierungsdatum
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = Datensatz-ID
+respondo_entry_yform_table_key = YForm-Tabelle
+respondo_table_key_empty = Ohne YForm-Tabelle

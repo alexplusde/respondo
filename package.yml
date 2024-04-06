@@ -1,50 +1,67 @@
-package: blaupause # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
-version: '2.0.0-dev-2024-02-11' # Aktuelle Version. 
-author: 'Alexander Walther' # Name(n) der Autoren, wird im Installer gezeigt
-supportpage: https://github.com/alexplusde/blaupause # Support-Seite, wird im Installer gezeigt
-# load: late 
+package: respondo
+version: '0.0.1-dev-2024-04-06'
+author: 'Alexander Walther'
+supportpage: https://github.com/alexplusde/respondo
 
-requires:                       # Abhängigkeiten definieren, z.B.
+
+requires:
     php:
         version: '>8.1,<9'
-    redaxo: ^5.16              # REDAXO Core-Version
-    packages:                  # Plugins und Addons
+    redaxo: ^5.17
+    packages:
         yform: "^4"
-#       cronjob: ">1"
-#       metainfo: ">2"
+
+
 
 page:
-    title: translate:blaupause_title    # Übersetzung definieren in lang/de_de.lang
-    prio: 100                       # Reihenfolge in Relation zur Prio anderer Menüeinträge 
-    icon: rex-icon fa-gear
+    title: translate:respondo_title
+    block: system
+    prio: 20
+    icon: rex-icon fa-comments
 
 pages:
-    blaupause: # key, unter dem die Seite zu finden sein wird. Passende Datei im Addon-Verzeichnis `pages/blaupause.blaupausepage.php` muss vorhanden sein.
-        title: translate:blaupause_title
-#        main: true                 
-        block: system               # 'system', um ins Hauptmenü zu verschieben, oder 'blaupause', um eigenen blaupause-Abschnitt zu erstellen. Weglassen, um bei den Addons gelistet zu werden 
-        prio: 15                    # Reihenfolge in Abhängigkeit anderer Addons
-        icon: rex-icon fa-calendar  # Icon neben dem Menüpunkt
-        perm: blaupause[]               # Berechtigung, die einer Rolle zugewiesen werden kann. z.B. `admin` für Admin, oder `blaupause['xyz']` für dein eigenes Addon
-        subpages:                   # Automatisches Untermenü unterhalb des Reisters von `blaupausepage` erzeugen
-            table:
-                title: translate:blaupause_table
-                icon: rex-icon fa-gear
-                perm: blaupause[]
-            settings:
-                title: translate:blaupause_settings
-                icon: rex-icon fa-gear
-                itemclass: pull-right
-                perm: admin
-            docs:
-                title: translate:blaupause_docs
-                subPath: README.md  # Gibt anstelle einer Seite unter `pages` die README.md des Addons aus
-                icon: rex-icon fa-info-circle
-                itemclass: pull-right
-                perm: blaupause[docs]
+    todo:
+        title: translate:respondo_table_todo
+        icon: rex-icon fa-hourglass-half
+        perm: respondo[]
+    spam:
+        title: translate:respondo_table_spam
+        icon: rex-icon fa-ban
+        perm: respondo[guestbook]
+    article:
+        title: translate:respondo_table_article
+        icon: rex-icon fa-file-text
+        perm: respondo[article]
+    yform_table:
+        title: translate:respondo_table_yform_table
+        icon: rex-icon fa-table
+        perm: respondo[yform_table]
+    comment:
+        title: translate:respondo_table_comment
+        icon: rex-icon fa-comment
+        perm: respondo[table]
+    guestbook:
+        title: translate:respondo_table_guestbook
+        icon: rex-icon fa-book
+        perm: respondo[guestbook]
+    all:
+        title: translate:respondo_table_all
+        icon: rex-icon fa-comments
+        perm: respondo[all]
+    settings:
+        title: translate:respondo_settings
+        icon: rex-icon fa-gear
+        itemclass: pull-right
+        perm: admin
+    docs:
+        title: translate:respondo_docs
+        subPath: README.md
+        icon: rex-icon fa-info-circle
+        itemclass: pull-right
+        perm: respondo[docs]
 
 default_config:
-    field: 'Test' # Bei der Installation belegt REDAXO automatisch in der rex_config-Tabelle im Namespace `blaupause` im Feld `field` den Wert `Test` 
+    editor: 'form-control redactor-editor--default'
 
 installer_ignore:
 - .git

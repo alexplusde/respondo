@@ -1,11 +1,11 @@
 <?php
 
-echo rex_view::title(rex_i18n::msg('blaupause_title'));
+echo rex_view::title(rex_i18n::msg('respondo_title'));
 
 $yform = $this->getProperty('yform', []);
 $yform = $yform[rex_be_controller::getCurrentPage()] ?? [];
 
-$table_name = 'rex_blaupause';
+$table_name = 'rex_respondo';
 
 rex_extension::register(
     'YFORM_MANAGER_DATA_PAGE_HEADER',
@@ -19,5 +19,6 @@ rex_extension::register(
 );
 
 $_REQUEST['table_name'] = $table_name;
+
 
 include rex_path::plugin('yform', 'manager', 'pages/data_edit.php');

@@ -1,0 +1,57 @@
+respondo_title = Respondo
+
+respondo_table = 💬 Respondo 
+respondo_table_all = All Posts
+respondo_table_article = Article
+respondo_table_guestbook = Guestbook
+respondo_table_review = Reviews
+respondo_table_comment = Comments
+respondo_table_guestbook = Guestbook
+respondo_table_spam = Spam
+respondo_table_todo = Awaiting Approval
+respondo_table_yform_table = YForm Table
+respondo_settings = Settings
+respondo_docs = Help
+
+# Configuration Forms
+respondo_config = Settings
+respondo_editor = WYSIWYG Editor
+
+# YForm Table Translation
+respondo_entry_author = Author
+respondo_entry_author_email = Email Address
+respondo_entry_author_email_notice = Author's email address.
+respondo_entry_author_notice = Author of the post. This can be a real name, for example.
+respondo_entry_be_link_id = Article ID
+respondo_entry_content = Content
+respondo_entry_createdate = Creation Date
+respondo_entry_fieldset_end = --- Fieldset End ---
+respondo_entry_fieldset_form = Input
+respondo_entry_fieldset_relation = 🔗 Linked with...
+respondo_entry_fieldset_relation_end = --- Links End ---
+respondo_entry_notice = Title of the post. This can be a subject, a headline or summary, for example.
+respondo_entry_parent_id = Belongs to
+respondo_entry_rating = Rating
+respondo_entry_rating_empty = Without Rating
+respondo_entry_rating_notice = Allows to give a 0-5 star rating.
+respondo_entry_status = Status
+respondo_entry_status_deleted = ❌ Deleted
+respondo_entry_status_empty = Draft
+respondo_entry_status_featured = ⭐ Featured
+respondo_entry_status_hidden = 🕶️ Hidden
+respondo_entry_status_new = 🟡 New
+respondo_entry_status_published = 🟢 Published
+respondo_entry_status_spam = 🗑️ Spam
+respondo_entry_title = Title
+respondo_entry_type = Type
+respondo_entry_type_article = REDAXO Article
+respondo_entry_type_comment = Comment
+respondo_entry_type_guestbook = Guestbook
+respondo_entry_type_review = Review
+respondo_entry_type_other = Other
+respondo_entry_type_table = YForm Table
+respondo_entry_updatedate = Update Date
+respondo_entry_uuid = UUID
+respondo_entry_yform_table_dataset_id = Dataset ID
+respondo_entry_yform_table_key = YForm Table
+respondo_table_key_empty = Without YForm Table
