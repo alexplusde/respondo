@@ -21,8 +21,8 @@ page:
     icon: rex-icon fa-comments
 
 pages:
-    todo:
-        title: translate:respondo_table_todo
+    moderation:
+        title: translate:respondo_table_moderation
         icon: rex-icon fa-hourglass-half
         perm: respondo[]
     spam:

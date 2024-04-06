@@ -8,7 +8,7 @@ respondo_table_review = Rezensionen
 respondo_table_comment = Kommentare
 respondo_table_guestbook = Gästebuch
 respondo_table_spam = Spam
-respondo_table_todo = Wartet auf Freigabe
+respondo_table_moderation = Wartet auf Freigabe
 respondo_table_yform_table = YForm-Tabelle
 respondo_settings = Einstellungen
 respondo_docs = Hilfe
@@ -55,3 +55,48 @@ respondo_entry_uuid = UUID
 respondo_entry_yform_table_dataset_id = Datensatz-ID
 respondo_entry_yform_table_key = YForm-Tabelle
 respondo_table_key_empty = Ohne YForm-Tabelle
+
+# Moderation
+
+respondo_moderation_delete = Löschen
+respondo_moderation_spam = Spam
+respondo_moderation_edit = Bearbeiten
+respondo_moderation_approve = Freigeben
+
+# Spam-Moderation
+
+respondo_spam_delete = Endgültig Löschen
+respondo_spam_edit = Bearbeiten
+respondo_spam_approve = Freigeben
+
+
+# Frontend und Fragmente
+
+respondo.comment.headline = Kommentare
+respondo.comment.intro = Hier können Sie einen Kommentar hinterlassen.
+respondo.comment.form_name = Name
+respondo.comment.form_email = E-Mail
+respondo.comment.form_content = Inhalt
+respondo.comment.form_submit = Kommentar absenden
+respondo.comment.form_success = Vielen Dank für Ihren Kommentar!
+respondo.comment.form_error = Bitte füllen Sie alle Felder aus.
+
+respondo.review.headline = Rezensionen
+respondo.review.intro = Hier können Sie eine Rezension hinterlassen.
+respondo.review.form_name = Name
+respondo.review.form_email = E-Mail
+respondo.review.form_content = Inhalt
+respondo.review.form_rating = Bewertung
+respondo.review.form_submit = Rezension absenden
+respondo.review.form_success = Vielen Dank für Ihre Rezension!
+respondo.review.form_error = Bitte füllen Sie alle Felder aus.
+
+respondo.guestbook.headline = Gästebuch
+respondo.guestbook.intro = Hier können Sie einen Eintrag in unser Gästebuch hinterlassen.
+respondo.guestbook.form_name = Name
+respondo.guestbook.form_email = E-Mail
+respondo.guestbook.form_content = Inhalt
+respondo.guestbook.form_submit = Eintrag absenden
+respondo.guestbook.form_success = Vielen Dank für Ihren Eintrag!
+respondo.guestbook.form_error = Bitte füllen Sie alle Felder aus.
+respondo.guestbook.form_spam = Ihr Eintrag wurde als Spam erkannt und nicht gespeichert.
