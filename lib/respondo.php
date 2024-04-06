@@ -4,6 +4,7 @@ namespace Respondo;
 
 use rex_article;
 use rex_i18n;
+use rex_yform_manager_collection;
 use rex_yform_manager_dataset;
 use rex_yform_manager_table;
 
@@ -34,6 +35,17 @@ class Entry extends rex_yform_manager_dataset
         ];
     }
 
+    public static function ratingValues() : array
+    {
+        return [
+            '1' => '★',
+            '2' => '★★',
+            '3' => '★★★',
+            '4' => '★★★★',
+            '5' => '★★★★★',
+        ];
+    }
+
     public static function YformTableKeyValues(): array
     {
         $yform_tables = rex_yform_manager_table::getAll();
@@ -45,11 +57,116 @@ class Entry extends rex_yform_manager_dataset
         return $yform_table_keys;
     }
 
+    public static function getComments(): ?rex_yform_manager_collection
+    {
+        return self::query()
+            ->where('type', 'comment')
+            ->orderBy('createdate', 'DESC')
+            ->find();
+    }
+
+    public function getChildren(): ?rex_yform_manager_collection
+    {
+        return self::query()
+            ->where('parent_id', $this->getId())
+            ->orderBy('createdate', 'ASC')
+            ->find();
+    }
+
+    public static function getReviews(): ?rex_yform_manager_collection
+    {
+        return self::query()
+            ->where('type', 'review')
+            ->orderBy('createdate', 'DESC')
+            ->find();
+    }
+
+    public static function getGuestbookEntries(): ?rex_yform_manager_collection
+    {
+        return self::query()
+            ->where('type', 'guestbook')
+            ->orderBy('createdate', 'DESC')
+            ->find();
+    }
+
+    public static function getArticleComments(int $articleId): ?rex_yform_manager_collection
+    {
+        return self::query()
+            ->where('type', 'comment')
+            ->where('be_link_id', $articleId)
+            ->orderBy('createdate', 'DESC')
+            ->find();
+    }
+
+    public static function getEntriesByTable(string $tableKey, int $datasetId = null): ?rex_yform_manager_collection
+    {
+        if($datasetId) {
+            return self::query()
+                ->where('yform_table_key', $tableKey)
+                ->where('yorm_table_dataset_id', $datasetId)
+                ->orderBy('createdate', 'DESC')
+                ->find();
+        }
+        return self::query()
+            ->where('yform_table_key', $tableKey)
+            ->orderBy('createdate', 'DESC')
+            ->find();
+    }
+
+    public static function getModeration(): ?rex_yform_manager_collection
+    {
+        return self::query()
+            ->where('status', 0)
+            ->orderBy('createdate', 'DESC')
+            ->find();
+    }
+
+    public static function getSpam(): ?rex_yform_manager_collection
+    {
+        return self::query()
+            ->where('status', -2)
+            ->orderBy('createdate', 'DESC')
+            ->find();
+    }
+
+    public function getCreatedateFormatted() : string
+    {
+        $now = new \DateTime();
+        $date = new \DateTime($this->getCreatedate());
+        $interval = $now->diff($date);
+
+        if ($interval->y >= 1) {
+            return "vor " . $interval->y . " Jahr(en)";
+        } else if ($interval->m >= 1) {
+            return "vor " . $interval->m . " Monat(en)";
+        } else if ($interval->d >= 1) {
+            return "vor " . $interval->d . " Tag(en)";
+        } else if ($interval->h >= 1) {
+            return "vor " . $interval->h . " Stunde(n)";
+        } else if ($interval->i >= 1) {
+            return "vor " . $interval->i . " Minute(n)";
+        } else {
+            return "vor " . $interval->s . " Sekunde(n)";
+        }
+    }
+
+    public function getStatusFormatted() : string
+    {
+        $status = $this->getStatus();
+        $statusValues = self::statusValues();
+        return $statusValues[$status] ?? $statusValues[''];
+    }
+
+    public function getTableManagerEditUrl() {
+        $table_name = $this->getTableName();
+        return \rex_yform_manager::url($table_name, $this->getId());
+    }
+
     /* Titel */
     /** @api */
     public function getTitle(): ?string
     {
-        return $this->getValue('title');
+        return htmlspecialchars($this->getValue('title'), ENT_QUOTES, 'UTF-8');
     }
 
     /** @api */
@@ -58,17 +175,18 @@ class Entry extends rex_yform_manager_dataset
         $this->setValue('title', $value);
         return $this;
     }
-
-    /* Inhalt */
-    /** @api */
     public function getContent(bool $asPlaintext = false): ?string
     {
-        if ($asPlaintext) {
-            return strip_tags($this->getValue('content'));
-        }
-        return $this->getValue('content');
-    }
+        $content = $this->getValue('content');
 
+        if ($asPlaintext) {
+            return nl2br(strip_tags($content, '<br>,<strong>'));
+        }
+
+        // Konvertiert spezielle Zeichen in HTML-Entitäten und behält Zeilenumbrüche bei
+        return nl2br(htmlspecialchars($content, ENT_QUOTES, 'UTF-8'));
+    }
+    
     /** @api */
     public function setContent(mixed $value): self
     {
@@ -80,7 +198,8 @@ class Entry extends rex_yform_manager_dataset
     /** @api */
     public function getAuthor(): ?string
     {
-        return $this->getValue('author');
+        return htmlspecialchars($this->getValue('author'), ENT_QUOTES, 'UTF-8');
+
     }
 
     /** @api */
@@ -94,7 +213,7 @@ class Entry extends rex_yform_manager_dataset
     /** @api */
     public function getAuthorEmail(): ?string
     {
-        return $this->getValue('author_email');
+        return htmlspecialchars($this->getValue('author_email'), ENT_QUOTES, 'UTF-8');
     }
 
     /** @api */
@@ -106,13 +225,23 @@ class Entry extends rex_yform_manager_dataset
 
     /* Bewertung */
     /** @api */
-    public function getRating(): ?float
+    public function getRating(): ?int
     {
         return $this->getValue('rating');
     }
 
+    public function getRatingStars(): string
+    {
+        $rating = $this->getRating();
+        $stars = '';
+        for ($i = 0; $i < 5; $i++) {
+            $stars .= $rating > $i ? '★' : '☆';
+        }
+        return $stars;
+    }
+
     /** @api */
-    public function setRating(float $value): self
+    public function setRating(int $value): self
     {
         $this->setValue('rating', $value);
         return $this;
@@ -120,13 +249,13 @@ class Entry extends rex_yform_manager_dataset
 
     /* Status */
     /** @api */
-    public function getStatus(): mixed
+    public function getStatus(): int
     {
-        return $this->getValue('status');
+        return (int) $this->getValue('status');
     }
 
     /** @api */
-    public function setStatus(mixed $param): mixed
+    public function setStatus(int $param): self
     {
         $this->setValue('status', $param);
         return $this;

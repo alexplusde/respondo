@@ -1,6 +1,8 @@
 <?php
 
-$_REQUEST['FORM[rex_yform_searchvars-rex_respondo][7][]'] = '-2';
-$_REQUEST['FORM[rex_yform_searchvars-rex_respondo][send]'] = '1';
+echo rex_view::title(rex_i18n::msg('respondo_title'));
 
-include rex_path::addon('respondo', 'pages/all.php');
+$fragment = new rex_fragment();
+$fragment->setVar('title', rex_i18n::msg('respondo_spam_title'));
+$fragment->setVar('content', '<div class="alert alert-info">' . rex_i18n::msg('respondo_spam_info') . '</div>', false);
+echo $fragment->parse('/respondo/backend/spam.php');
