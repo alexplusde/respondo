@@ -9,7 +9,7 @@ $entry = $this->getVar('entry');
     <div style="border: 1px solid grey; padding: 10px;">
         <div>
             <small class="pull-right">
-                <span class="c-badge"><?= $entry->getStatusFormatted() ?></span>, 
+                <span class="c-badge"><?= $entry->getStatusFormatted() ?></span>,
                 <?= $entry->getCreatedateFormatted() ?>
             </small>
             <span class="font-weight-bold"><?= $entry->getAuthor() ?: '&nbsp;' ?></span>
