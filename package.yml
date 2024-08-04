@@ -52,12 +52,12 @@ pages:
     settings:
         title: translate:respondo_settings
         icon: rex-icon fa-gear
-        itemclass: pull-right
+        itemClass: pull-right
         perm: admin
     docs:
         title: translate:respondo_docs
         icon: rex-icon fa-info-circle
-        itemclass: pull-right
+        itemClass: pull-right
         perm: respondo[docs]
 
 default_config:
